@@ -1,5 +1,5 @@
 package dll;
-import java.utils.*;
+import java.util.*;
 
 class Businesslogic {
 
@@ -16,9 +16,14 @@ class Businesslogic {
 }
 
 
- public boolean updateBook(String seriesName, String bookName, String authorName){}
+ public boolean updateBook(String seriesName, String bookName, String authorName){
+   return true;
+ }
   
-  public boolean deleteBook(String seriesName, String authorName){}
+  public boolean deleteBook(String seriesName, String authorName){
+
+    return true;
+  }
 
   
   
