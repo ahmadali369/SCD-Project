@@ -1,15 +1,13 @@
-import java.awt.*;
-import javax.swing.*;
-
 import dal.BooksDAO;
-import pl.Presentation;
-import bll.Businesslogic;
+import pl.BooksPO;
+import bll.BooksBLO;
 
 public class Main {
   public static void main(String[] args) {
-    Presentation p = new Presentation();
+    
     BooksDAO dal = new BooksDAO();
-    Businesslogic bl = new Businesslogic();
+    BooksBLO bl = new BooksBLO(dal);
+    BooksPO p = new BooksPO(bl);
 p.setVisible(true);
     
   }
